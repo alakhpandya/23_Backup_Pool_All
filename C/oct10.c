@@ -50,7 +50,9 @@ int main(){
         }
     }
 */
-
+    // True: Anything other than 0
+    // False: 0
+    // n = 5
     if (n % 2){
         printf("foo");
     }
