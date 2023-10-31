@@ -66,5 +66,5 @@ int main()
 1. Write a program that takes an integer from user and prints all the integers which are divisible by 5 starting from 0 till that integer (including both). Do not use 'if' statement in this program.
 2. Write a program that takes two integers from user and prints all the integers which are divisible by 5 and 3 both starting from first integer till the second integer (including both).
 3. Write a program that takes an integer from user and prints all its factors.
-4. Write a program that takes an integer from user and prints number of digits that number has. 7832 -> 4
+4. Write a program that takes an integer from user and prints number of digits that the number has. 7832 -> 4
 */
