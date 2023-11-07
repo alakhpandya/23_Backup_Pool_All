@@ -43,6 +43,67 @@
             <label for="whatsapp">Send me regular updates through whatsapp</label>
         </div>
         <div>
+            <input type="date" name="" id="">
+            <input type="time" name="" id="">
+            <input type="datetime" name="" id="">
+            <input type="datetime-local" name="" id="">
+        </div>
+        <div>
+            <input type="file" name="" id="">
+        </div>
+        <div>
+            <h4>How did you come to know about us?</h4>
+            <input type="checkbox" name="" id=""> Newspaper <br>
+            <input type="checkbox" name="" id=""> Friend <br>
+            <input type="checkbox" name="" id=""> Internet <br>
+            <input type="checkbox" onclick="document.getElementById('hidden-input').type='text';" name="" id=""> Other 
+            <input type="hidden" name="" id="hidden-input" placeholder="Please explain">
+        </div>
+        <br>
+        <div>
+            <input type="month" name="" id="">
+            <input type="week" name="" id="">
+        </div>
+        <div>
+            No of passangers: <input type="number" max="6" min="1" name="" id="">
+        </div>
+        <div>
+            Choose your budget: <input type="number" min="10000" step="5000" max="50000">
+        </div>
+        <div>
+            Mobile no: <input type="tel" name="" id="">
+        </div>
+        <div>
+            <h4>Select mode of delivery</h4>
+            <input type="radio" name="mode-of-delivery" id="shipment"> 
+            <label for="shipment">Shipment</label> <br>
+            
+            <input type="radio" name="mode-of-delivery" id="pickup-point"> 
+            <label for="pickup-point">Pickup from your nearest pickup point</label> <br>
+            
+            <input type="radio" name="mode-of-delivery" id="warehouse"> 
+            <label for="warehouse">Pickup from our warehouse</label>
+        </div>
+        <br>
+        <div>
+            <input type="radio" name="gender" id="female"> 
+            <label for="female">Female</label>
+
+            <input type="radio" name="gender" id="male"> 
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="other"> 
+            <label for="other">Other</label>
+        </div>
+        <br>
+        <div>
+            Choose your budget:
+            <!-- 10000 <input min="10000" step="10000" max="50000" type="range" name="budget" id=""> 50000 -->
+            <input type="range" value="20000" min="10000" max="50000" step="5000" oninput="this.nextElementSibling.value = this.value">
+            <output>20000</output>
+        </div>
+        <br>
+        <div>
             <input type="submit" value="Register through input:submit">
             <input type="button" value="NAB">
             <button>Register Using Button Tag</button>
@@ -51,3 +112,7 @@
     </form>
 </body>
 </html>
+
+<!-- 
+    Next Lecture: input:search
+ -->
