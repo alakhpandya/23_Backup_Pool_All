@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <table border="1">
-        <thead>
+    <table border="1" align="center" bgcolor="yellow">
+        <thead align="right" bgcolor="chocolate">
             <tr>
                 <th>Sr</th>
                 <th>Name</th>
@@ -15,26 +15,39 @@
                 <th>Sub-2</th>
             </tr>
         </thead>
-        <tbody>
+        <!-- <tbody align="center"> -->
+        <tbody bgcolor="aqua">
             <tr>
                 <td>1</td>
-                <td>Naisha</td>
-                <td>75</td>
-                <td>64</td>
+                <td align="center">Naisha</td>
+                <td align="center" colspan="2">75</td>
+                <!-- <td align="right">75</td> -->
             </tr>
-            <tr>
-                <td>2</td>
+            <tr align="center">
+                <td align="left">2</td>
                 <td>Isha</td>
-                <td>21</td>
-                <td>89</td>
+                <td bgcolor="red">21</td>
+                <td align="left" rowspan="2">89</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td>Riya</td>
+                <td>
+                    <table border="1" bgcolor="orange">
+                        <tr>
+                            <td>Hetal</td>
+                        </tr>
+                        <tr>
+                            <td>Hemal</td>
+                        </tr>
+                        <tr>
+                            <td>Hina</td>
+                        </tr>
+                    </table>
+                </td>
                 <td>68</td>
-                <td>89</td>
+                <!-- <td>89</td> -->
             </tr>
-            <tr>
+            <tr bgcolor="lightgreen">
                 <td>4</td>
                 <td>Vishwanathan Roy</td>
                 <td>98</td>
@@ -43,7 +56,10 @@
             <tr>
                 <td>5</td>
                 <td>Bhupendra</td>
-                <td>100</td>
+                <td>
+                    <img src="/images/star.webp" height="20px" alt="">
+                    100
+                </td>
                 <td>90</td>
             </tr>
             <tr>
