@@ -215,3 +215,95 @@ Output:
 
 */
 
+#include<stdio.h>
+/*
+int main()
+{
+    int n, m, i, j, k;
+    printf("n: ");
+    scanf("%d", &n);    // 5
+    printf("m: ");
+    scanf("%d", &m);
+
+    for(i = 1; i <= n; i++){
+        for(k = 1; k <= m; k++){
+            for(j = 1; j <= n-i+1; j++){
+                printf(" ");
+            }
+            for(j = 1; j <= i; j++){
+                printf("* ");
+            }
+            for(j = 1; j <= n-i+1; j++){
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+*/
+
+// Take an integer 'n' from user and print the following pattern of stars:
+/*
+n = 5
+
+     *
+    * *
+   * * *
+  * * * *
+ * * * * *
+ * * * * *
+  * * * *
+   * * *
+    * *
+     *
+*/
+/*
+#include<stdio.h>
+
+int main()
+{
+    int n, m, i, j, k;
+    printf("n: ");
+    scanf("%d", &n);    // 5
+    // loop for upper triangle:
+    for(i = 1; i <= n; i++){    
+        for(j = 1; j <= n-i+1; j++){
+            printf(" ");
+        }
+        // star printing
+        for(j = 1; j <= i; j++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    // loop for lower triangle:
+    for(i = 1; i <= n; i++){
+        for(j = 1; j <= i; j++){
+            printf(" ");
+        }
+        for(j = 1; j <= n-i+1; j++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+*/
+
+// Take two integers 'n' & 'm' from user and print the following pattern of stars:
+/*
+n = 5, m = 3
+
+     *          *          *
+    * *        * *        * *
+   * * *      * * *      * * *
+  * * * *    * * * *    * * * *
+ * * * * *  * * * * *  * * * * *
+ * * * * *  * * * * *  * * * * * 
+  * * * *    * * * *    * * * *
+   * * *      * * *      * * *
+    * *        * *        * *
+     *          *          *
+*/
