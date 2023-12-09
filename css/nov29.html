@@ -19,6 +19,7 @@
         color: red;
     } */
     
+    /*
     .nav-menu li{
         
     }
@@ -35,6 +36,64 @@
     div li a{
         color: red;
     }
+    */
+/* 
+    div > a{
+        color: red;
+    } */
+
+    /*
+    div + a{
+        color: black;
+    }
+    */
+
+    /*
+    li:nth-child(5){
+        background-color: greenyellow;
+    }
+    */
+    /*
+    li:nth-child(even){
+        background-color: gainsboro;
+    }
+    */
+    /*
+    li:nth-child(odd){
+        background-color: black;
+        color: white;
+    }
+    */
+    /*
+    li:nth-child(3n-7){
+        background-color: burlywood;
+    }
+    */
+
+    /*
+    h1, a{
+        color: purple;
+    }
+    */
+/* 
+    a[target="_blank"]{
+        color: red;
+    } */
+/* 
+    li[value="201"]{
+        background-color: pink;
+    }
+
+    a[target]{
+        color: red;
+    } */
+
+    .nav-links{
+        color: red;
+    }
+    #first_link{
+        background-color: black;
+    }
 </style>
 <body>
     <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos saepe possimus necessitatibus molestias!</h1>
@@ -42,21 +101,23 @@
     <a href="#">Button 2</a>
     <div id="upper-nav">
         <ul class="nav-menu">
-            <li><a class="nav-links" href="#">Lorem ipsum dolor sit amet.</a></li>
-            <li><a class="nav-links" href="#">Saepe, explicabo perferendis! Unde, accusantium?</a></li>
-            <li><a class="nav-links" href="#">Facilis quaerat dicta ut hic.</a></li>
-            <li><a class="nav-links" href="#">Cumque repudiandae voluptates corporis officiis.</a></li>
-            <li><a class="nav-links" href="#">Iusto molestiae enim tenetur mollitia!</a></li>
-            <li><a class="nav-links" href="#">Minima, ex saepe. Quidem, dicta!</a></li>
-            <li><a class="nav-links" href="#">Velit corporis quasi dolorem obcaecati!</a></li>
-            <li><a class="nav-links" href="#">Similique incidunt atque nesciunt nostrum?</a></li>
-            <li><a class="nav-links" href="#">Deleniti voluptatum alias eveniet odit?</a></li>
-            <li><a class="nav-links" href="#">Aliquam asperiores labore dolorum adipisci.</a></li>
-            <li><a class="nav-links" href="#">Deleniti provident perspiciatis aut incidunt!</a></li>
-            <li><a class="nav-links" href="#">Amet ab voluptatibus porro laboriosam.</a></li>
-            <li><a class="nav-links" href="#">Nesciunt nam sed cupiditate dolore!</a></li>
-            <li><a class="nav-links" href="#">Qui eos nam eligendi quis.</a></li>
-            <li><a class="nav-links" href="#">Delectus quia dignissimos quod dolor?</a></li>
+            <li><a id="first_link" href="#" target="_blank" class="nav-links">Lorem ipsum dolor sit amet.</a></li>
+            <li><a href="#" class="nav-links">Omnis, pariatur! Necessitatibus, neque facere!</a></li>
+            <li><a href="#" class="nav-links">Veritatis modi dicta similique aperiam.</a></li>
+            <li><a href="#" target="_blank" class="nav-links">Suscipit sapiente ipsam asperiores voluptatem.</a></li>
+            <li><a href="#" target="_self" class="nav-links">Commodi eos soluta temporibus qui!</a></li>
+            <li><a href="#" target="" class="nav-links">Recusandae amet eaque iure rerum.</a></li>
+            <li><a href="#" class="nav-links">Deserunt veniam eaque voluptas illo.</a></li>
+            <li><a href="#" class="nav-links">Exercitationem officiis eos eaque earum?</a></li>
+            <li><a href="#" class="nav-links">In quia sequi enim accusamus.</a></li>
+            <li><a href="#" class="nav-links">Itaque modi perferendis nostrum culpa!</a></li>
+            <li><a href="#" class="nav-links">Facere totam sed adipisci mollitia.</a></li>
+            <li><a href="#" class="nav-links">Sint enim ducimus veritatis dignissimos.</a></li>
+            <li><a href="#" class="nav-links">Cum fuga similique beatae dignissimos!</a></li>
+            <li><a href="#" class="nav-links">Maiores voluptas numquam ducimus debitis?</a></li>
+            <li><a href="#" class="nav-links">Incidunt quam assumenda doloribus eum?</a></li>
+            <li><p>Lorem ipsum dolor sit amet consectetur adipisicing.</p></li>
+            <li><p>Lorem ipsum dolor sit amet consectetur adipisicing.</p></li>
         </ul>
         <a href="#">Button 3</a> | 
         <a href="#">Button 4</a>
@@ -64,13 +125,13 @@
     <a href="#">Button 5</a> | 
     <a href="#">Button 6</a>
     <div>
-        <ul>
-            <a class="nav-links" href="#"><li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li></a>
-            <a class="nav-links" href="#"><li>Iste alias id qui ipsum, deserunt ullam in.</li></a>
-            <a class="nav-links" href="#"><li>Quod facilis placeat tenetur, quo neque id quidem!</li></a>
+        <ol>
+            <a class="nav-links" href="#"><li value="201">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li></a>
+            <a class="nav-links" href="#"><li value="201">Iste alias id qui ipsum, deserunt ullam in.</li></a>
+            <a class="nav-links" href="#"><li value="301">Quod facilis placeat tenetur, quo neque id quidem!</li></a>
             <a class="nav-links" href="#"><li>Animi sit aperiam obcaecati laboriosam, cum aliquam consectetur.</li></a>
-            <a class="nav-links" href="#"><li>Laudantium nisi excepturi sint iusto, quae veritatis minima!</li></a>
-        </ul>
+            <a class="nav-links" href="#"><li value="">Laudantium nisi excepturi sint iusto, quae veritatis minima!</li></a>
+        </ol>
         <a href="#">Button 7</a> | 
         <a href="#">Button 8</a>
     </div>
