@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url("fonts.css");
+
+
+    /* html{
+        font-size: 12px;
+    } */
+    p{
+        font-family: Lato;
+    }
+    #para1{
+        font-size: 32px;
+    }
+    #para2{
+        /* rem: root's em (font size) */
+        font-size: 2rem;
+        /* 
+            1 rem = 16px by default
+        */
+    }
+    #box3{
+        font-size: 12px;
+    }
+    #para3{
+        /* em = multiple of font-size of parent element when it is specified in font-size propery */
+        font-size: 2em;
+    }
+    #box4{
+        font-size: 1.5em;   /* 30px */
+    }
+    #para4{
+        font-size: 1.5em;
+    }
+    
+    #para5{
+        font-size: 32px;
+        /* em = multiple of its own font-size */
+        line-height: 1.5em; /* 1.5 * 32 = 48px */
+    }
+    body{
+        font-size: 20px;
+    }
+    #outer-box6{
+        font-size: 1.3rem; /* 1.3 * 16 = 20.8 */
+    }
+    #inner-box6{
+        font-size: 1.2em;   /* 1.2 * 20.8 = 24.96 */
+    }
+    #para6{
+        font-size: 1.4em;   /* 1.4 * 24.96 = 34.944 */
+        line-height: 1.5em; /* 1.5 * 34.944 = 52.416px */
+    }
+</style>
+<body>
+    <div id="box1">
+        <p id="para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit sapiente reiciendis sed itaque natus. Sequi aliquid consequatur deserunt numquam perspiciatis. Assumenda, iure maiores consequatur vero architecto omnis animi. Expedita, eum.</p>
+    </div>
+    <div id="box2">
+        <p id="para2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit sapiente reiciendis sed itaque natus. Sequi aliquid consequatur deserunt numquam perspiciatis. Assumenda, iure maiores consequatur vero architecto omnis animi. Expedita, eum.</p>
+    </div>
+    <div id="box3">
+        <p id="para3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit sapiente reiciendis sed itaque natus. Sequi aliquid consequatur deserunt numquam perspiciatis. Assumenda, iure maiores consequatur vero architecto omnis animi. Expedita, eum.</p>
+    </div>
+    <div id="box4">
+        <p id="para4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit   sapiente reiciendis sed itaque natus. Sequi aliquid consequatur deserunt numquam perspiciatis. Assumenda, iure maiores consequatur vero architecto omnis animi. Expedita, eum.</p>
+    </div>
+
+    <div id="box5">
+        <p id="para5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit   sapiente reiciendis sed itaque natus. Sequi aliquid consequatur deserunt numquam perspiciatis. Assumenda, iure maiores consequatur vero architecto omnis animi. Expedita, eum.</p>
+    </div>
+
+    <div id="outer-box6">
+        <div id="inner-box6">
+            <p id="para6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit   sapiente reiciendis sed itaque natus. Sequi aliquid consequatur deserunt numquam perspiciatis. Assumenda, iure maiores consequatur vero architecto omnis animi. Expedita, eum.</p>
+        </div>
+    </div>
+</body>
+</html>
