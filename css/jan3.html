@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* Ignore above style */
+    
+    body{
+        font-family: sans-serif;
+    }
+
+    .card{
+        border: solid;
+        width: 300px;
+        height: 350px;
+        border-radius: 10px;
+        margin: 3rem auto;  /* Ignore this */
+    }
+    .upper-card{
+        border: solid green;
+        height: 65%;
+        position: relative;
+    }
+
+    .card-img{
+        /* border: solid; */
+        width: 250px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .color-container{
+        display: flex;
+        gap: 2px;
+        /* Ignore above code */
+        border: solid;
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+    }
+    .color{
+        border: solid rgba(176, 196, 222, 0.603) 3px;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .color:hover{
+        border: 1px black solid;
+    }
+    .green{
+        background-color: green;
+    }
+    .grey{
+        background-color: grey;
+    }
+    .pink{
+        background-color: pink;
+    }
+
+    .lower-card{
+        /* border: solid red; */
+        height: 35%;
+        padding: 10px;  /* Ignore this */
+        position: relative;
+    }
+    .style-name{
+        font-size: 1.1rem;
+    }
+    .size{
+        font-size: 0.75rem;
+        margin: 0.4rem 0;   /* Ignore this */
+    }
+    .centerdot{
+        font-weight: 900;
+    }
+    .price{
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+    .mrp{
+        text-decoration: line-through;
+    }
+    .bogo{
+        background: linear-gradient(90deg, blanchedalmond, rgba(247, 241, 222, 0) 100%);
+        /* background-color: blanchedalmond; */
+        position: absolute;
+        width: 100%;
+        height: 2rem;
+        bottom: 0;
+        left: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .bogo-text{
+        /* border: solid; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 0.9rem;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+</style>
+<body>
+    <div class="card">
+        <div class="upper-card">
+            <img class="card-img" src="/images/sunglasses1.jpg" alt="">
+            <div class="color-container">
+                <div class="color green"></div>
+                <div class="color grey"></div>
+                <div class="color pink"></div>
+            </div>
+        </div>
+        <div class="lower-card">
+            <h3 class="style-name">John Jacobs</h3>
+            <p class="size">Size: Medium <span class="centerdot">&centerdot;</span> John Jacobs</p>
+            <p class="price"><span class="mrp">₹10,000</span> &nbsp; ₹2,000</p>
+            <div class="bogo">
+                <p class="bogo-text">Buy 1 Get 1 + Free Gold Membership</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

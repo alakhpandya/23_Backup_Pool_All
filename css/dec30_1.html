@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        /* background-color: cornflowerblue; */
+        /* background-image: linear-gradient(to top, #BD2B2F, #ED7D21); */
+        /* background: linear-gradient(to right, #BD2B2F, #ED7D21);
+        background: linear-gradient(to left, cornflowerblue, #ED7D21);
+        background: linear-gradient(to bottom right, green, greenyellow, #ED7D21, #BD2B2F); */
+        /* background: linear-gradient(to bottom right, greenyellow, rgb(213, 255, 47), #ED7D21, #BD2B2F); */
+
+        /* background: radial-gradient(circle, #BD2B2F, #ED7D21); */
+        /* background: radial-gradient(circle, #BD2B2F, #ED7D21, greenyellow); */
+        background: radial-gradient(#BD2B2F, #ED7D21, greenyellow);
+    }
+    div{
+        margin: auto;   /* Ignore this till we study margin property */
+        border: solid;
+    }
+    .parent{
+        height: 400px;
+        width: 700px;
+    }
+    .child{
+        height: 300px;
+        width: 500px;
+    }
+    .grandchild{
+        height: 200px;
+        width: 400px;
+    }
+    #static{
+        position: static;   /* default position */
+        /* We can't use: top, bottom, left & right */
+    }
+    #relative{
+        position: relative;
+        bottom: 30px;
+        left: 20px;
+        /* When we give any position other than static, we "pluck the element out of the canvas" so it can glide over the other elements */
+    }
+    #absolute{
+        position: absolute;
+    }
+    #sticky{
+        height: 40px;
+        width: 80px;
+    }
+</style>
+<body>
+    <br><br><br><br><br><br>
+    <div class="parent">
+        <br><br><br>
+        <div class="child">
+            <br><br><br>
+            <div class="grandchild">
+                <br><br><br><br><br><br>
+                <button id="static">Static</button>
+                <button id="relative">Relative</button>
+                <button id="absolute">Absolute</button>
+                <button id="sticky">Sticky</button>
+                <button id="fixed">Fixed</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
