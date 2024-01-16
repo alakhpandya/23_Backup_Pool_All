@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Before & After Pseudo Elements */
+    h1{
+        text-align: center;
+    }
+    h1::before{
+        content: "I";
+        display: block;
+        background-color: orangered;
+    }
+    h1::after{
+        content: "India";
+        display: block;
+        background-color: green;
+    }
+
+    /* 
+    It is must to have 'content' in before & after, content might be "" but it is must to have it.
+
+    Pseudo elements just go 'before' or 'after' the content of the main element but they stay inside the element itself.
+
+    'before' & 'after' don't work with self-closing tags.
+    */
+</style>
+<body>
+    <h1>Love</h1>
+</body>
+</html>

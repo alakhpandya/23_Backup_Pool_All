@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
 </head>
 <style>
     *{
@@ -25,11 +29,48 @@
         margin: 3rem auto;  /* Ignore this */
     }
     .upper-card{
-        border: solid green;
+        /* border: solid green; */
         height: 65%;
         position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        /* background-color: black; */
     }
-
+    .offer{
+        background-color: rgb(254, 211, 159);
+        width: 55px;
+        height: 55px;
+        padding: 17px 0 0 20px;/* Ignore this line */
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        font-size: 00.8rem;
+        border-radius: 50%;
+        font-weight: 600;
+    }
+    .heart-container{
+        background-color: red;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        right: 7px;
+        top: 7px;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 10px;  /* Ignore this line */
+        border: 1px solid red;
+        cursor: pointer;
+    }
+    .heart-container:hover{
+        background-color: white;
+    }
+    .heart-container:hover .heart-icon{
+        color: red;
+    }
+    .heart-icon{
+        color: white;
+        font-size: 1.3rem;
+    }
     .card-img{
         /* border: solid; */
         width: 250px;
@@ -38,11 +79,23 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .star-container{
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+    }
+    .star-icon{
+        /* color: rgb(0, 255, 0); */
+        /* color: #2c10c7; */
+        /* color: rgb(44, 16, 199); */
+        /* color: #D9643A; */
+        color: rgba(217, 100, 58, 0.5);
+    }
     .color-container{
         display: flex;
         gap: 2px;
         /* Ignore above code */
-        border: solid;
+        /* border: solid; */
         position: absolute;
         right: 5px;
         bottom: 5px;
@@ -72,13 +125,14 @@
         height: 35%;
         padding: 10px;  /* Ignore this */
         position: relative;
+        border-top: solid 1px;
     }
     .style-name{
         font-size: 1.1rem;
     }
     .size{
         font-size: 0.75rem;
-        margin: 0.4rem 0;   /* Ignore this */
+        margin: 0.4rem 0 1rem;   /* Ignore this */
     }
     .centerdot{
         font-weight: 900;
@@ -89,6 +143,8 @@
     }
     .mrp{
         text-decoration: line-through;
+        color: gray;
+        font-weight: 400;
     }
     .bogo{
         background: linear-gradient(90deg, blanchedalmond, rgba(247, 241, 222, 0) 100%);
@@ -115,7 +171,18 @@
 <body>
     <div class="card">
         <div class="upper-card">
+            <div class="offer">80% OFF</div>
+            <div class="heart-container">
+                <i class="fa-regular fa-heart heart-icon"></i>
+            </div>
             <img class="card-img" src="/images/sunglasses1.jpg" alt="">
+            <div class="star-container">
+                <i class="fa-solid fa-star star-icon"></i>
+                <i class="fa-solid fa-star star-icon"></i>
+                <i class="fa-solid fa-star star-icon"></i>
+                <i class="fa-solid fa-star star-icon"></i>
+                <i class="fa-solid fa-star-half-stroke star-icon"></i>
+            </div>
             <div class="color-container">
                 <div class="color green"></div>
                 <div class="color grey"></div>
@@ -125,7 +192,7 @@
         <div class="lower-card">
             <h3 class="style-name">John Jacobs</h3>
             <p class="size">Size: Medium <span class="centerdot">&centerdot;</span> John Jacobs</p>
-            <p class="price"><span class="mrp">₹10,000</span> &nbsp; ₹2,000</p>
+            <p class="price">₹2,000 &nbsp; <span class="mrp">₹10,000</span></p>
             <div class="bogo">
                 <p class="bogo-text">Buy 1 Get 1 + Free Gold Membership</p>
             </div>
