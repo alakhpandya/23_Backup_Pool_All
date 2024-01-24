@@ -12,12 +12,12 @@
     }
     h1::before{
         content: "I";
-        display: block;
+        /* display: block; */
         background-color: orangered;
     }
     h1::after{
         content: "India";
-        display: block;
+        /* display: block; */
         background-color: green;
     }
 
@@ -30,6 +30,11 @@
     */
 </style>
 <body>
+    <!-- Without using before/after -->
+    <!-- 
+        <h1><span id="i">I</span>Love<span id="india">India</span></h1>
+    -->
+
     <h1>Love</h1>
 </body>
 </html>

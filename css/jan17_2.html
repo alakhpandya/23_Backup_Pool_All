@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url("/fonts.css");
+    body{
+        background-color: blanchedalmond;
+    }
+    .site-title{
+        font-family: "Yashvi's Fonts";
+        font-size: 2.5rem;
+    }
+    .site-text{
+        font-family: Lato;
+        font-size: 1.4rem;      /* 22.4px */
+        line-height: 1.5em;     /* 33.6px */
+    }
+    a{
+        text-decoration: none;
+        color: blue;
+        position: relative;
+    }
+    a:hover::after{
+        /* content: "Connect with me on linked-in"; */
+        content: attr(data-message);
+        background-color: black;
+        color: blanchedalmond;
+        font-size: 1rem;
+        padding: 0 0.75rem;/* Ignore this line */
+        border-radius: 2rem;
+        position: absolute;
+        bottom: 100%;
+        left: 70%;
+        white-space: nowrap;
+    }
+    
+</style>
+<body>
+    <!-- Tool tip -->
+    <h1 class="site-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum!</h1>
+    <p class="site-text">Lorem ipsum, <a data-message="Connect with me on linked-in" href="https://royaltechnosoft.com">dolor sit amet</a> consectetur adipisicing elit. Similique velit molestiae facere nesciunt cum ipsam optio sapiente. Perferendis, incidunt inventore. Vitae accusantium totam quisquam, debitis dolore a quo omnis non animi ipsam quasi eos natus impedit explicabo ipsum laborum accusamus. Eligendi natus error provident quos. Aut repellat eum animi at iusto, quibusdam ullam explicabo ipsam nostrum labore veniam in ipsa provident autem optio quod ut illo sit tempore cupiditate eius accusantium! <a href="#" data-message="Like my facebook page!">Adipisci, minima?</a> Obcaecati est ad quis? Ipsam ipsa ex assumenda culpa quis magnam nobis, nam asperiores aut maiores, eveniet ad tenetur aliquid vero a rerum voluptates itaque laudantium, cumque voluptatum. Alias ea sunt, blanditiis similique dolore nulla sint nobis? Veniam dolorem reiciendis eos, nihil dolores, quo assumenda vel aperiam esse, pariatur illum laudantium porro! Quos iusto consectetur perspiciatis, repellendus quod pariatur voluptates odio at ratione ipsa ullam voluptatum, sint non recusandae. Perspiciatis vitae laudantium obcaecati adipisci necessitatibus cum. Officia qui ab accusamus sint voluptatum laborum rerum. Nostrum ex minima veritatis voluptas laboriosam commodi hic autem ipsa dolor debitis earum, dolores eligendi vitae perspiciatis beatae sed ullam blanditiis suscipit? Velit perspiciatis deleniti quas, nobis qui explicabo iste nostrum alias delectus optio nihil reiciendis illum libero <a data-message="Follow me on twitter" href="#">minima sequi</a> nesciunt, facilis deserunt error eveniet. Corrupti repudiandae eum veritatis inventore ex laborum quo explicabo fugiat reiciendis corporis, cum, est quis odit ullam iusto nam fugit, aliquid praesentium quia voluptatem illo. Quo dolorum quisquam architecto. Consectetur molestiae eos quas dicta placeat beatae aut, reprehenderit quia dignissimos culpa nostrum odio tenetur rem repudiandae alias nesciunt harum veritatis. Quae sed aspernatur reprehenderit fugiat vitae ratione facilis quas reiciendis modi rerum. Unde excepturi perferendis sint velit! Soluta fuga iste dolorum error. Reiciendis optio facilis consectetur repellendus quo vero. Fuga corporis veniam nesciunt nostrum corrupti magni voluptates porro, vero deserunt ut, dicta beatae laborum deleniti optio veritatis accusamus ullam debitis quam, <a data-message="Subscribe to my youtube channel" href="#">culpa similique.</a></p>
+</body>
+</html>
