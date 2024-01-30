@@ -22,6 +22,10 @@
         /* display: inline; */
         /* display: inline-block; */
     }
+    #box2{
+        /* Margins overlap between block elements only! */
+        margin-top: 10px;
+    }
     #btn1{
         border: solid;
         width: 100px;
@@ -35,12 +39,19 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    #link2{
-        border: solid;
+    #btn2{
+        /* Margins do not overlap if any inline element is involved! */
+        /* margin-left: 20px; */
+
+        /* margin auto works only with block elements */
+        margin: 1rem auto;
     }
     #box3{
         /* Equal margin all sides - shortcut */
         margin: 20px;
+    }
+    #box4{
+        margin: 30px 40px;
     }
     #box5{
         /* margin: top-bottom left-right */
@@ -54,10 +65,25 @@
         /* margin: top left-right bottom */
         margin: 10px 20px 30px
     }
-    /* Next Lecture: Overlapping margin */
+    #box2{
+        /* margin-left: auto;
+        margin-right: auto; */
+        /* margin: 0 auto; */
+
+        /* margin auto doesn't work vertically */
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #box10{
+        text-align: left;
+        /* border: none; */
+        /* width: 150px; */
+        width: fit-content;
+        margin: 2rem auto;
+    }
 </style>
 <body>
-    <button id="btn1">Link 1</button>
+    <button id="btn1">Link 1</button> <br>
     <button id="btn2">Link 2</button>
 
     <div class="boxes" id="box1">Lorem.</div>
