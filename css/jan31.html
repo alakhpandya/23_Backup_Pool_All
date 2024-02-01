@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a, div{
+        border: solid;
+    }
+    #link1{
+        height: 30px;
+        width: 70px;
+        display: block;
+        margin: auto;
+    }
+    #box1, #box2{
+        display: inline;
+    }
+    #link3{
+        display: inline-block; /* margin auto will not work with inline-block */
+        height: 25px;
+        width: 60px;
+    }
+    ul{
+        /* list-style: none; */
+        list-style-type: none;
+    }
+    #box3{
+        width: 250px;
+        height: 25px;
+        border: solid red 4px;
+        margin: 1rem;
+        outline: solid black 5px;
+    }
+    input{
+        /* outline-color: red; */
+        outline: none;
+    }
+    input:focus{
+        /* border:solid 4px black */
+    }
+</style>
+<body>
+    <a href="#" id="link1">Link 1</a>
+    <a href="#" id="link2">Link 2</a>
+    <div id="box1">Lorem ipsum dolor sit amet.</div>
+    <div id="box2">Dolorum ipsa aliquid rerum consectetur.</div>
+    <br><br>
+    <a href="#" id="link3">Link 3</a>
+    <a href="#" id="link4">Link 4</a>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Omnis ab nam ratione. Saepe, nisi molestiae?</li>
+        <li>Accusamus eum deserunt, iusto porro dignissimos recusandae!</li>
+        <li>Quam soluta vero nulla beatae laborum illo.</li>
+        <li>Temporibus quo praesentium, corrupti inventore consectetur a.</li>
+        <li>Necessitatibus laudantium laboriosam minima at facere aspernatur?</li>
+    </ul>
+    
+    <div id="box3"></div>
+    <input type="text" >
+</body>
+</html>

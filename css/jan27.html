@@ -15,6 +15,9 @@
         padding: 0;
         box-sizing: border-box;
     }
+    body{
+        background-color: black;
+    }
 
     .boxes {
         background-color: greenyellow;
@@ -40,25 +43,59 @@
 
     h1{
         font-family: sans-serif;
+        font-size: 2.5rem;
+        background-color: olivedrab;
+        padding: 1rem 10vw;
+        text-align: left;       /* default */
     }
     p {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 1.3rem;
+        margin-bottom: 2rem;
+        border: solid white;
     }
-    section, h1{
-        padding: 3rem 15vw;
+    section{
+        padding: 3rem 10vw;
     }
     #sec1{
-        background-color: black;
         color: white;
+        text-align: right;
     }
     #sec2{
         background-color: olivedrab;
+        text-align: center;
+    }
+    .btn{
+        text-decoration: none;
+        background-color: blanchedalmond;
+        color: black;
+        padding: 0.5rem 1.5rem;
+        border: solid;
+        border-radius: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .btn:hover{
+        color: white;
+        background-color: transparent;
+    }
+    #sec3{
+        position: relative;
+        overflow: hidden;
+        color: white;
+        text-align: justify;
+    }
+    .bg-img{
+        position: absolute;
+        top: -80%;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.5;
     }
 </style>
 
 <body>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque?</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores corporis dignissimos quia rerum!</h1>
     <!-- <div class="boxes" id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, numquam! Culpa dolor maiores fugit quos similique repudiandae quaerat eos nesciunt.</div>
     <div class="boxes" id="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, numquam! Culpa dolor maiores fugit quos similique repudiandae quaerat eos nesciunt.</div>
     <div class="boxes" id="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, numquam! Culpa dolor maiores fugit quos similique repudiandae quaerat eos nesciunt.</div> -->
@@ -68,7 +105,7 @@
             distinctio minima, cumque fugit illo pariatur eum dicta expedita quo aut ipsam assumenda, rem cupiditate ab
             dolores obcaecati qui est amet, aliquid eligendi! A eaque reprehenderit voluptatum, ullam recusandae numquam
             obcaecati repellat earum rem perferendis saepe explicabo asperiores ipsum sequi soluta sit magni. Incidunt
-            enim placeat inventore nostrum explicabo, sequi voluptatem exercitationem quae praesentium dolore commodi
+            enim placeat inventore nostrum explicabo, sequi voluptatem exercitationem quae praesentiumdolore commodi
             ipsum non aperiam cumque id nemo, rerum omnis? Explicabo voluptatibus praesentium sed adipisci obcaecati
             ullam iure, voluptatum accusantium alias! Eos dolores quia consequuntur non, aliquam repellat beatae. Rem
             recusandae nulla impedit distinctio.</p>
@@ -82,14 +119,15 @@
             delectus, blanditiis voluptatem provident consequatur alias quos facere quae in? Nemo ad sed vel officiis
             facilis veritatis consectetur nam. Placeat, fugiat voluptas, eligendi modi dicta rerum, expedita velit
             accusantium ab vel recusandae nostrum eius architecto dignissimos non! Quas corporis voluptate impedit
-            aliquam reiciendis reprehenderit dicta mollitia consectetur obcaecati. Minima eos molestiae repellendus
+            aliquamreiciendis reprehenderit dicta mollitia consectetur obcaecati. Minima eos molestiae repellendus
             doloremque nulla in odit esse officia velit nesciunt quisquam ipsa ut qui, neque nostrum incidunt possimus,
             cupiditate dicta quod totam.</p>
             <a href="#" class="btn">Button 3</a>
             <a href="#" class="btn">Button 4</a>
     </section>
 
-    <section>
+    <section id="sec3">
+        <img src="/images/night_city.jpg" alt="" class="bg-img">
         <p id="para3">Dolore libero, laboriosam quidem nihil obcaecati veniam quisquam eius cupiditate, ullam quod
             aspernatur, itaque ducimus numquam atque fuga quas nobis tenetur. Nam deserunt fuga dolorem dolorum
             distinctio accusantium sequi inventore, eius porro corrupti eligendi non officiis adipisci cumque doloribus
