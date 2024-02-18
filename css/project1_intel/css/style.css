@@ -3,3 +3,74 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* ------------------------------------ navbar ------------------------------------ */
+nav{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid royalblue;
+}
+.nav-left{
+    display: flex;
+    gap: 2.5rem;
+}
+.nav-logo-box{
+    background-color: royalblue;
+    padding: 1.5rem 10px 0;
+}
+.nav-logo{
+    height: 1.5rem;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.nav-link{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: royalblue;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: royalblue;
+}
+.language span{
+    text-transform: uppercase;
+}
+nav i{
+    cursor: pointer;
+}
+.nav-search{
+    height: 100%;
+    position: relative;
+}
+.nav-search input{
+    height: 100%;
+    padding-left: 40px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background-color: gainsboro;
+}
+.nav-search .search-icon{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+}
