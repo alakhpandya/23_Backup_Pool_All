@@ -4,8 +4,21 @@
     box-sizing: border-box;
 }
 
+:root{
+    --white: white;
+    --light-grey: #F7F7F7;
+    --grey: #E7E7E7;
+    --light-color1: #0068B5;
+    --light-color1_transperent: #0067b5d4;
+    --light-color2: #7BDEFF;
+    --dark-color1: #004a86;
+    --black: #262626;
+
+    --primary-fonts: sans-serif;
+}
+
 body{
-    font-family: sans-serif;
+    font-family: var(--primary-fonts);
 }
 ul{
     list-style: none;
@@ -19,14 +32,15 @@ nav{
     height: 5rem;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid royalblue;
+    border-bottom: 1px solid var(--light-color1);
+    background-color: var(--white);
 }
 .nav-left{
     display: flex;
     gap: 2.5rem;
 }
 .nav-logo-box{
-    background-color: royalblue;
+    background-color: var(--light-color1);
     padding: 1.5rem 10px 0;
 }
 .nav-logo{
@@ -40,14 +54,14 @@ nav{
 .nav-link{
     font-size: 1rem;
     text-transform: uppercase;
-    color: royalblue;
+    color: var(--light-color1);
 }
 
 .nav-right{
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    color: royalblue;
+    color: var(--light-color1);
 }
 .language span{
     text-transform: uppercase;
@@ -65,7 +79,7 @@ nav i{
     font-size: 1.2rem;
     border: none;
     outline: none;
-    background-color: gainsboro;
+    background-color: var(--light-grey);
 }
 .nav-search .search-icon{
     position: absolute;
@@ -73,4 +87,20 @@ nav i{
     top: 50%;
     transform: translateY(-50%);
     font-size: 1.2rem;
+}
+
+/* ------------------------------------ Section 1 ------------------------------------ */
+#section-1{
+    height: 500px;
+    background-image: url("/images/1.png");
+    background-size: 100vw;
+    background-position-y: -150px;
+}
+
+.big-box{
+    border-right: solid var(--white);
+    border-bottom: solid var(--white);
+    width: 500px;
+    height: 400px;
+    background-color: var(--light-color1_transperent);
 }
