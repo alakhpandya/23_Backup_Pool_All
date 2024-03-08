@@ -1,71 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/all.min.css" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css" />
 
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="nav-left">
-                <div class="nav-logo-box">
-                    <a href="index.html">
-                        <img src="/images/intel-header-logo.svg" class="nav-logo" alt="">
-                    </a>
-                </div>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Solutions</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Developers</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Partners</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Foundry</a></li>
-                </ul>
-            </div>
+      <nav>
+        <div class="nav-left">
+          <div class="nav-logo-box">
+            <a href="index.html">
+              <img
+                src="/images/intel-header-logo.svg"
+                class="nav-logo"
+                alt=""
+              />
+            </a>
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Solutions</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Developers</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Partners</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Foundry</a></li>
+          </ul>
+        </div>
 
-            <div class="nav-right">
-                <i class="fa-solid fa-user"></i>
-                <div class="language">
-                    <i class="fa-solid fa-globe"></i>
-                    <span>English</span>
-                </div>
-                <form action="" class="nav-search">
-                    <input type="search" name="" placeholder="Search Intel.com" id="">
-                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                </form>
-            </div>
-        </nav>
+        <div class="nav-right">
+          <i class="fa-solid fa-user"></i>
+          <div class="language">
+            <i class="fa-solid fa-globe"></i>
+            <span>English</span>
+          </div>
+          <form action="" class="nav-search">
+            <input type="search" name="" placeholder="Search Intel.com" id="" />
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          </form>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section id="section-1">
-            <div class="big-box">
-                <h3>Technically Speaking: An Intel Podcast</h3>
-                <p>Learn about the latest in AI innovations, powered by Intel and iHeart Radio.</p>
-                <a href="#">
-                    Listen now
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-            </div>
-            <div class="small-box">
+      <section id="section-1">
+        <div class="big-box">
+          <div class="text-container">
+            <h3 class="site-title">Technically Speaking: An Intel Podcast</h3>
+            <p>
+              Learn about the latest in AI innovations, powered by Intel and
+              iHeart Radio.
+            </p>
+            <a href="#" class="site-link-box">
+              <span class="site-link">Listen now </span>
+              &nbsp;<i class="fa-solid fa-arrow-right arrow-icon"></i>
+            </a>
+          </div>
+        </div>
+        <div class="small-box"></div>
+      </section>
 
+      <section id="section-3">
+        <a href="#" class="actions">
+          <img src="/images/3.jpg" alt="" />
+          <div class="actions-content">
+            <h3 class="site-title">
+              Intel® Quantum SDK is preparing tech leaders for a world of
+              quantum computing
+            </h3>
+            <a href="#" class="site-btn">Watch Now</a>
+          </div>
+        </a>
+        <a href="#" class="actions">
+          <img src="/images/4.jpg" alt="" />
+          <div class="actions-content second-action-content">
+            <h3 class="site-title">
+              Federated learning, a new model for confidential computing
+            </h3>
+            <a href="#" class="site-btn">Watch Now</a>
+          </div>
+        </a>
+      </section>
+      <section id="section-4">
+        <div class="search-bar">
+          <div class="search-category">
+            <p class="search-result">38 results</p>
+            <select id="">
+              <option value="">Filter by</option>
+              <option value="">Artificial Intelligence</option>
+              <option value="">Data Center</option>
+              <option value="">Edge to cloud</option>
+              <option value="">Internet of things</option>
+              <option value="">New Technologies</option>
+            </select>
+          </div>
+          <div class="search-sort-content">
+            <select name="" id="">
+                <option value="">Sort by</option>
+                <option value="">A - Z</option>
+                <option value="">Z - A</option>
+                <option value="">Newest</option>
+                <option value="">Oldest</option>
+            </select>
+            <div class="search-input-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="search" name="" id="" placeholder="Search this content">
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="upper-card">
+                    <img src="/images/card1_1.jpg" alt="" class="card-img">
+                </div>
+                <div class="lower-card">
+                    <a href="#" class="card-title">Intel tech powers the future of transportation</a>
+                    <p class="card-text">Pervasive 5G connectivity and advanced processing capability powered by Intel will give pilots exceptional performance and control and give fans an unforgettable experience.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="upper-card">
+                    <img src="/images/card1_1.jpg" alt="" class="card-img">
+                </div>
+                <div class="lower-card">
+                    <a href="#" class="card-title">Intel tech powers the future of transportation</a>
+                    <p class="card-text">Pervasive 5G connectivity and advanced processing capability powered by Intel will give pilots exceptional performance and control and give fans an unforgettable experience.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="upper-card">
+                    <img src="/images/card1_1.jpg" alt="" class="card-img">
+                </div>
+                <div class="lower-card">
+                    <a href="#" class="card-title">Intel tech powers the future of transportation</a>
+                    <p class="card-text">Pervasive 5G connectivity and advanced processing capability powered by Intel will give pilots exceptional performance and control and give fans an unforgettable experience.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="upper-card">
+                    <img src="/images/card1_1.jpg" alt="" class="card-img">
+                </div>
+                <div class="lower-card">
+                    <a href="#" class="card-title">Intel tech powers the future of transportation</a>
+                    <p class="card-text">Pervasive 5G connectivity and advanced processing capability powered by Intel will give pilots exceptional performance and control and give fans an unforgettable experience.</p>
+                </div>
+            </div>
+        </div>
+      </section>
+      <br /><br /><br /><br /><br /><br /><br /><br />
     </main>
 
-    <footer>
-
-    </footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>
