@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    div{
+        border: solid;
+    }
+    #box1{
+        /* width: 100px; */
+        /* height: 50px; */
+        width: fit-content;
+        text-align: center;
+        padding: 0.25rem 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 5rem auto;
+
+        /* transform: translateX(100px); */
+        /* transform: translateX(-100px); */
+        /* transform: translateY(-100px); */
+        /* transform: translateY(100px); */
+        /* transform: translateX(20%); */
+        /* transform: translateX(50%); */
+        /* transform: translateX(-30%); */
+        /* transform: translateY(-30%); */
+        /* transform: translateY(30%); */
+        /* transform: translate(100px, 50px); */
+
+        /* transition-property: transform; */
+        /* transition-timing-function: ease; */
+        /* transition-duration: 1s; */
+
+        transition: 1s;
+    }
+    #box1:hover{
+        /* transform: rotate(90deg); */
+        /* transform: rotate(180deg); */
+        /* transform: rotate(360deg); */
+        /* transform: rotate(5deg); */
+
+        /* transform: rotateX(180deg); */
+        /* transform: rotateX(90deg); */
+        /* transform: rotateY(180deg); */
+        /* transform: rotateY(90deg); */
+        transform: rotateZ(180deg);
+    }
+
+    #box2{
+        width: 10px;
+        height: 50px;
+        background-color: green;
+
+        /* transition-property: width; */
+        /* transition-property: background-color; */
+        /* transition-property: all; default */
+        /* transition-timing-function: ease; default */
+        /* transition-duration: 2s; */
+        /* transition-duration: 500ms; */
+        transition-duration: 4s;
+
+        /* transition: 4s ease-in; */
+        /* transition: 4s ease-out; */
+        /* transition: 4s ease-in-out; */
+
+        /* transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335); */
+        /* transition-timing-function: ease; */
+
+        transition: 4s;
+        /* This is same as below: */
+        transition: all 4s ease;
+    }
+    #box2:hover{
+        width: 100%;
+        background-color: red;
+    }
+</style>
+<body>
+    <!-- Transform Property -->
+    <div id="box1">Box 1</div>
+    <div id="box2"></div>
+</body>
+</html>
