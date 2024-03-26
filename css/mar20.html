@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .box1{
+        border: solid;
+        height: 50px;
+        width: 10px;
+        background-color: green;
+
+        /* animation-name: move-box; */
+        animation-duration: 4s;
+        /* animation-timing-function: ease; */
+        animation-timing-function: steps(10);
+    }
+
+    .box2{
+        border: solid;
+        height: 50px;
+        width: 50px;
+        background-color: red;
+        position: absolute;
+        top: 70px;
+        left: 40px;
+
+        animation-name: movebox2;
+        animation-duration: 4s;
+        /* animation-iteration-count: 3; */
+        animation-iteration-count: infinite;
+        /* animation-delay: 3s; */
+        /* animation-play-state: running;   default */
+    }
+
+    .pause{
+        animation-play-state: paused;
+    }
+    .btn-box{
+        text-align: center;
+    }
+    button{
+        background-color: black;
+        color: greenyellow;
+        padding: 0.2rem 0.5rem;
+        border: solid black 1px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: greenyellow;
+        color: black;
+    }
+
+    @keyframes move-box {
+        from{
+            width: 10px;
+        }
+        to{
+            width: 100%;
+        }
+    }
+    @keyframes movebox2 {
+        0%{
+            top: 70px;
+            left: 40px;
+        }
+        25%{
+            top: 350px;
+            left: 40px;
+            background-color: orange;
+        }
+        50%{
+            top: 350px;
+            left: 400px;
+            background-color: yellow;
+        }
+        75%{
+            top: 70px;
+            left: 400px;
+            background-color: greenyellow;
+        }
+        100%{
+            top: 70px;
+            left: 40px;
+            background-color: green;
+        }
+    }
+</style>
+<body>
+    <!-- Animation -->
+    <div class="box1"></div>
+    <div class="btn-box">
+        <button onclick="document.querySelector('.box2').classList.toggle('pause')">Play/Pause</button>
+    </div>
+    <div class="box2"></div>
+</body>
+</html>
