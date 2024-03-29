@@ -21,6 +21,19 @@ a{
 ul{
     list-style-type: none;
 }
+.btn-regular{
+    background-color: var(--black);
+    border: none;
+    color: var(--white);
+    border: var(--white) solid;
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    font-size: 1.3rem;
+}
+.site-link{
+    color: var(--white);
+    text-decoration: underline;
+}
 /* -------------------------------------- Navbar -------------------------------------- */
 
 nav{
@@ -82,7 +95,7 @@ nav{
 .login-signup-form{
     border: solid var(--white) 2px;
     border-radius: 10px;
-    padding-top: 2rem;
+    padding: 2rem 1rem 1rem;
     position: relative;
 }
 .form-title{
@@ -94,12 +107,75 @@ nav{
     background-color: var(--black);
     padding: 0 2px;
 }
+.login-signup-form .input-box{
+    /* border: yellow solid 1px; */
+    height: 3rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.login-signup-form .input-box input{
+    height: 3rem;
+    width: 100%;
+    background-color: var(--black);
+    border: none;
+    outline: none;
+    color: var(--white);
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--white);
+    padding-left: 20px;
+}
+.login-signup-form .input-box input:focus, .login-signup-form .input-box input:valid{
+    border: solid var(--white) 2px;
+    border-radius: 8px;
+}
+.login-signup-form .input-box label{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: var(--light-col);
+    transition: 0.2s;
+}
+.login-signup-form input:focus + label, .login-signup-form input:valid + label{
+    top: 0;
+    left: 7px;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 0 1px;
+}
+.remember-me-fgt-pwd-box{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 0.6rem;
+}
 
+
+
+
+.submit-box{
+    /* border: solid white; */
+    /* text-align: center; */
+    margin: auto;
+    width: fit-content;
+}
+.submit-box input{
+    cursor: pointer;
+}
 
 
 
 
 /* -------------------------------------- Media Queries -------------------------------------- */
+@media (min-width: 342px){
+    .remember-me-fgt-pwd-box{
+        flex-direction: row;
+    }
+}
+
 @media (min-width: 750px){
     .bar-icon{
         display: none;
