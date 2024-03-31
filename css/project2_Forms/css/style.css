@@ -30,6 +30,10 @@ ul{
     border-radius: 8px;
     font-size: 1.3rem;
 }
+.btn-regular:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
 .site-link{
     color: var(--white);
     text-decoration: underline;
@@ -88,6 +92,7 @@ nav{
     background-color: var(--black);
     margin: 3rem auto;
     width: 95%;
+    max-width: 450px;
     border-radius: 10px;
     padding: 2rem 1rem 1rem;
     color: var(--white);
@@ -112,8 +117,10 @@ nav{
     height: 3rem;
     position: relative;
     margin-bottom: 1.5rem;
+    width: 100%;
 }
-.login-signup-form .input-box input{
+.login-signup-form .input-box input,
+.login-signup-form .input-box select{
     height: 3rem;
     width: 100%;
     background-color: var(--black);
@@ -123,6 +130,12 @@ nav{
     font-size: 1.3rem;
     border-bottom: 2px solid var(--white);
     padding-left: 20px;
+}
+.login-signup-form .input-box select,
+.login-signup-form .input-box option{
+    font-family: cursive;
+    color: var(--light-col);
+    font-size: 1.2rem;
 }
 .login-signup-form .input-box input:focus, .login-signup-form .input-box input:valid{
     border: solid var(--white) 2px;
@@ -145,16 +158,13 @@ nav{
     background-color: var(--black);
     padding: 0 1px;
 }
-.remember-me-fgt-pwd-box{
+.remember-me-fgt-pwd-box, .gender-box{
     margin-bottom: 1.5rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     gap: 0.6rem;
 }
-
-
-
 
 .submit-box{
     /* border: solid white; */
@@ -165,14 +175,19 @@ nav{
 .submit-box input{
     cursor: pointer;
 }
-
+.new-old-user{
+    margin-top: 1rem;
+}
 
 
 
 /* -------------------------------------- Media Queries -------------------------------------- */
 @media (min-width: 342px){
-    .remember-me-fgt-pwd-box{
+    .remember-me-fgt-pwd-box, .gender-box{
         flex-direction: row;
+    }
+    .gender-box{
+        justify-content: center;
     }
 }
 
@@ -205,5 +220,16 @@ nav{
     .nav-link:hover{
         background-color: var(--white);
         /* color: var(--black); */
+    }
+    .signup-form-container{
+        max-width: 700px;
+    }
+    .signup-lg{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .signup-lg-child{
+        width: 100%;
     }
 }
