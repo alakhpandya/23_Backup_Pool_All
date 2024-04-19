@@ -87,6 +87,40 @@ nav{
     color: var(--black);
 }
 
+/* -------------------------------------- Carousel -------------------------------------- */
+.carousel{
+    position: relative;
+}
+.item{
+    position: relative;
+}
+.carousel-img{
+    width: 100vw;
+    height: 600px;
+}
+.carousel-text-box{
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+.owl-nav{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.owl-theme .owl-nav [class*=owl-]{
+    color: white !important;
+    font-size: 2rem !important;
+}
+
+
 /* -------------------------------------- Form -------------------------------------- */
 .form-container{
     background-color: var(--black);
@@ -191,6 +225,8 @@ nav{
     }
 }
 
+/* @media screen and (min-width: 750px){ */
+/* @media all and (min-width: 750px){      default  */
 @media (min-width: 750px){
     .bar-icon{
         display: none;
